@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/p5/p5.min.js"></script>
+    <script src="js/rpt.js"></script>
+    <title>Automata Celular</title>
+</head>
+<body>
+    Simbolo: <input type="text" id="simbol">
+    <br>
+    Pasos: <input type="number" id="pasos">
+    <br>
+    <button onclick="dibujar()">Dibujar</button>
+    <div id="canvasHolder"></div>
+    <script>
+        function dibujar() {
+            let s = document.getElementById("simbol").value;
+            let p = document.getElementById("pasos").value;
+            if (s === "" || p ==="") {
+                alert("Name must be filled out");
+                return false;
+            } else {
+                if (s==='R' || s==='P' || s==='T' || s==='E' && (int)(p) >= 0)
+                    getStr(p, s);
+                else
+                    alert("Algun parametro no valido")
+            }
+        }
+    </script>
+</body>
+</html>
