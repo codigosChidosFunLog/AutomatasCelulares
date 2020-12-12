@@ -1,6 +1,6 @@
 # AutomatasCelulares
 
-Reimplementacion del Automata Celular del juego piedra, papel o tijera 
+Reimplementacion con JS del Automata Celular del juego piedra, papel o tijera
 
 [AutomataRPT](https://github.com/eolandro/AutomataRPT#automatarpt) de eolandro
 
